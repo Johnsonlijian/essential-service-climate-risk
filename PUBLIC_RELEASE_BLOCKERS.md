@@ -7,3 +7,10 @@ The public package is not ready for GitHub until these checks are complete:
 3. Exclude raw third-party data and downloaded archives.
 4. Confirm that all generated tables/figures are non-sensitive and redistribution-safe.
 5. Create the GitHub repository under `https://github.com/Johnsonlijian/` and push only after explicit approval.
+
+## Local Git status
+
+- Local repository initialized on 2026-05-15.
+- Initial local commit: `2776c8e Prepare reproducibility package skeleton`.
+- Intended remote configured: `https://github.com/Johnsonlijian/essential-service-climate-risk.git`.
+- No push has been performed.
