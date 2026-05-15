@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the associated manuscript."
 title: "Essential-Service Climate-Risk: 30-city open-data reproducibility package"
 authors:
-  - family-names: "[AUTHOR FAMILY NAME]"
-    given-names: "[AUTHOR GIVEN NAME]"
+  - family-names: "REN"
+    given-names: "Lijian"
 date-released: "2026-05-15"
 repository-code: "https://github.com/Johnsonlijian/essential-service-climate-risk"
-license: "License to be confirmed before public release"
+license: "MIT"

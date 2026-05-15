@@ -1,0 +1,121 @@
+city,facility_type,facility_scope,n,median_confidence
+Accra,health,auxiliary,237,0.7279727935791016
+Accra,health,core,413,0.7598238468170166
+Accra,school,broad,198,0.6855086565017701
+Accra,school,core,895,0.7181426167488099
+Bangkok,health,auxiliary,5354,0.7836367070674897
+Bangkok,health,core,12397,0.8312132835388184
+Bangkok,school,broad,1354,0.8200000000000001
+Bangkok,school,core,7174,0.8380279123783112
+Bogota,health,auxiliary,2979,0.716882336139679
+Bogota,health,core,3037,0.7495288133621216
+Bogota,school,broad,958,0.7589717090129853
+Bogota,school,core,3198,0.7744579195976258
+Buenos Aires,health,auxiliary,3302,0.8004229545593262
+Buenos Aires,health,core,5153,0.8050912499427796
+Buenos Aires,school,broad,1776,0.7781471490859986
+Buenos Aires,school,core,5685,0.7897818565368653
+Cairo,health,auxiliary,5583,0.69571613073349
+Cairo,health,core,7536,0.731088536977768
+Cairo,school,broad,1591,0.673767375946045
+Cairo,school,core,3202,0.6781281709671021
+Delhi,health,auxiliary,6319,0.7095509052276612
+Delhi,health,core,13667,0.8200000000000001
+Delhi,school,broad,2311,0.7506672620773316
+Delhi,school,core,12008,0.7461628496646882
+Dhaka,health,auxiliary,1824,0.6995133042335511
+Dhaka,health,core,2661,0.8094223618507386
+Dhaka,school,broad,763,0.8085089206695557
+Dhaka,school,core,3706,0.7819486141204834
+Ho Chi Minh City,health,auxiliary,4694,0.6260656893253327
+Ho Chi Minh City,health,core,5241,0.7023121595382691
+Ho Chi Minh City,school,broad,2968,0.8806851089000702
+Ho Chi Minh City,school,core,7508,0.7973440170288086
+Houston,health,auxiliary,5116,0.9971000000000001
+Houston,health,core,13094,0.8200000000000001
+Houston,school,broad,2253,1.0
+Houston,school,core,3224,0.9971000000000001
+Istanbul,health,auxiliary,4752,0.799206691980362
+Istanbul,health,core,12725,0.8410032868385315
+Istanbul,school,broad,4671,0.9049567461013794
+Istanbul,school,core,7621,0.9621547341346741
+Jakarta,health,auxiliary,3312,0.6087121844291687
+Jakarta,health,core,7963,0.7182118177413941
+Jakarta,school,broad,5799,0.6675289154052735
+Jakarta,school,core,11335,0.7216424226760865
+Johannesburg,health,auxiliary,1715,0.7974640607833863
+Johannesburg,health,core,2814,0.7610669314861298
+Johannesburg,school,broad,5358,0.4
+Johannesburg,school,core,4222,0.7376814961433411
+Karachi,health,auxiliary,539,0.8200000000000001
+Karachi,health,core,1230,0.8517193377017975
+Karachi,school,broad,349,0.819726037979126
+Karachi,school,core,2223,0.8283221006393433
+Kolkata,health,auxiliary,3382,0.6501070737838746
+Kolkata,health,core,5028,0.7846801459789277
+Kolkata,school,broad,968,0.731231290102005
+Kolkata,school,core,6097,0.6988475799560547
+Lagos,health,auxiliary,427,0.6685516119003296
+Lagos,health,core,876,0.7430060088634491
+Lagos,school,broad,538,0.6968644738197327
+Lagos,school,core,2563,0.7384227991104126
+Lima,health,auxiliary,6043,0.6481956124305726
+Lima,health,core,5829,0.7257181286811829
+Lima,school,broad,1566,0.7450297355651856
+Lima,school,core,7589,0.7302403330802918
+London,health,auxiliary,6282,0.8670133258402348
+London,health,core,9847,0.8200000000000001
+London,school,broad,4288,0.8200000000000001
+London,school,core,7805,0.9544759869575501
+Los Angeles,health,auxiliary,7025,0.9593219041824341
+Los Angeles,health,core,17724,0.8200000000000001
+Los Angeles,school,broad,2699,0.9559824347496033
+Los Angeles,school,core,4550,0.9792849600315094
+Madrid,health,auxiliary,4041,0.8200000000000001
+Madrid,health,core,4532,0.8200000000000001
+Madrid,school,broad,690,0.8794709622859955
+Madrid,school,core,4073,0.9117833852767945
+Manila,health,auxiliary,9504,0.8125939249992371
+Manila,health,core,8861,0.7833728671073914
+Manila,school,broad,1961,0.8318000912666321
+Manila,school,core,8341,0.8179014205932618
+Mexico City,health,auxiliary,12092,0.7399420022964478
+Mexico City,health,core,12956,0.7639666974544526
+Mexico City,school,broad,2651,0.7234884977340699
+Mexico City,school,core,11981,0.7307026863098145
+Miami,health,auxiliary,2312,0.9558355987071991
+Miami,health,core,7121,0.8200000000000001
+Miami,school,broad,857,0.9976643204689026
+Miami,school,core,1520,0.9624298095703125
+Nairobi,health,auxiliary,670,0.7107493460178376
+Nairobi,health,core,1046,0.7994204342365265
+Nairobi,school,broad,404,0.7495641887187958
+Nairobi,school,core,1353,0.8160958170890809
+New York City,health,auxiliary,10313,0.9029502749443055
+New York City,health,core,26174,0.8200000000000001
+New York City,school,broad,4655,0.9475560396909715
+New York City,school,core,7313,0.9796461343765259
+Paris,health,auxiliary,3520,0.8200000000000001
+Paris,health,core,4906,0.8200000000000001
+Paris,school,broad,1942,0.8200000000000001
+Paris,school,core,5413,0.8935508012771607
+Rome,health,auxiliary,2590,0.9599245268106461
+Rome,health,core,3591,0.8200000000000001
+Rome,school,broad,822,0.9554214656352997
+Rome,school,core,2164,0.9239330768585206
+Rotterdam,health,auxiliary,1108,0.8467602908611298
+Rotterdam,health,core,1774,0.8367853045463562
+Rotterdam,school,broad,681,0.905141818523407
+Rotterdam,school,core,1658,0.9420469582080842
+Sao Paulo,health,auxiliary,18045,0.8838122963905335
+Sao Paulo,health,core,18876,0.8200000000000001
+Sao Paulo,school,broad,3409,0.9396270990371705
+Sao Paulo,school,core,14307,0.9194851994514466
+Shanghai,health,auxiliary,58,0.8200000000000001
+Shanghai,health,core,283,0.8200000000000001
+Shanghai,school,broad,116,0.8004698038101197
+Shanghai,school,core,189,0.8200000000000001
+Tokyo,health,auxiliary,18931,0.8200000000000001
+Tokyo,health,core,19588,0.9378754079341889
+Tokyo,school,broad,5945,0.8200000000000001
+Tokyo,school,core,9311,0.9233871647715569

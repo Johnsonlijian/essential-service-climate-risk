@@ -1,18 +1,22 @@
 # Essential-Service Climate-Risk Reproducibility Package
 
-This is a staged public reproducibility package for the 30-city essential public-service climate-risk pilot.
+This is a public reproducibility package for the 30-city essential public-service climate-risk pilot.
 
-Important boundary: this folder is a public-release skeleton. It must be reviewed before upload and must not include raw third-party data, active submission manuscripts, reviewer drafts, private logs, credentials, or files with unclear redistribution rights.
+Important boundary: this repository intentionally excludes raw third-party data, active submission manuscripts, reviewer drafts, private logs, credentials, and files with unclear redistribution rights.
 
 ## Contents
 
 - `REPRODUCIBLE_RUNBOOK.md`: commands and expected outputs.
 - `DATASETS_AND_LINKS.csv`: source registry for external datasets.
 - `CITATION.cff`: citation metadata draft.
-- `PUBLIC_RELEASE_BLOCKERS.md`: human-only checks before GitHub release.
+- `scripts/`: analysis and figure-generation scripts copied from the private project.
+- `ai_autoboost_code/`: reproducibility orchestration wrapper and dependency list.
+- `derived_tables/`: non-sensitive derived manuscript tables.
+- `figures/`: generated manuscript figures.
+- `PUBLIC_RELEASE_BLOCKERS.md`: release-scope notes and exclusions.
 
 ## Intended remote
 
 `https://github.com/Johnsonlijian/essential-service-climate-risk`
 
-Repository creation and push require explicit human approval.
+Repository creation and push were explicitly approved by the author on 2026-05-15.

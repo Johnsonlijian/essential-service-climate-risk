@@ -1,0 +1,31 @@
+area_id,city,country_iso3,overture_school,overture_health,osm_school_core,osm_health_core,osm_to_overture_school_ratio,osm_to_overture_health_ratio
+dhaka,Dhaka,BGD,4469,4485,1706.0,904.0,0.3817408816289998,0.2015607580824972
+lagos,Lagos,NGA,3101,1303,,,,
+nairobi,Nairobi,KEN,1757,1716,2678.0,530.0,1.5241889584519066,0.30885780885780884
+mexico_city,Mexico City,MEX,14632,25048,,,,
+jakarta,Jakarta,IDN,17134,11275,,,,
+sao_paulo,Sao Paulo,BRA,17716,36921,,,,
+rotterdam,Rotterdam,NLD,2339,2882,538.0,259.0,0.23001282599401454,0.08986814712005552
+houston,Houston,USA,5477,18210,1593.0,621.0,0.2908526565638123,0.03410214168039539
+shanghai,Shanghai,CHN,305,341,,,,
+kolkata,Kolkata,IND,7065,8410,,,,
+bangkok,Bangkok,THA,8528,17751,,,,
+manila,Manila,PHL,10302,18365,,,,
+ho_chi_minh,Ho Chi Minh City,VNM,10476,9935,,,,
+delhi,Delhi,IND,14319,19986,,,,
+karachi,Karachi,PAK,2572,1769,,,,
+cairo,Cairo,EGY,4793,13119,,,,
+istanbul,Istanbul,TUR,12292,17477,,,,
+london,London,GBR,12093,16129,,,,
+paris,Paris,FRA,7355,8426,,,,
+madrid,Madrid,ESP,4763,8573,,,,
+rome,Rome,ITA,2986,6181,,,,
+new_york,New York City,USA,11968,36487,,,,
+los_angeles,Los Angeles,USA,7249,24749,,,,
+miami,Miami,USA,2377,9433,,,,
+buenos_aires,Buenos Aires,ARG,7461,8455,,,,
+lima,Lima,PER,9155,11872,,,,
+bogota,Bogota,COL,4156,6016,,,,
+johannesburg,Johannesburg,ZAF,9580,4529,,,,
+accra,Accra,GHA,1093,650,,,,
+tokyo,Tokyo,JPN,15256,38519,,,,

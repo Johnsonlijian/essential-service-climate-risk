@@ -1,0 +1,10 @@
+nas_city,in_30_city_pilot,pilot_city,nas_files_total,readable_files,file_date_min,file_date_max,variables,era5_domain_max_t2m_c,era5_mean_area_daily_max_t2m_c,era5_hot_days_domain_max_gt35c,era5_hot_days_area_mean_gt35c,pilot_heat_share_mean_2025,directional_alignment
+Delhi,True,Delhi,31,31,2022-05-01,2022-05-31,d2m;expver;latitude;longitude;number;ssrd;t2m;valid_time,45.761,39.335,30,29,1.0,directionally_consistent_hot
+Lagos,True,Lagos,583,583,2019-06-01,2024-08-31,d2m;expver;latitude;longitude;number;ssrd;t2m;tp;u10;v10;valid_time,35.85,28.113,2,0,0.005,needs_interpretation_year_or_threshold_mismatch
+London,True,London,552,552,2019-06-01,2024-08-31,d2m;expver;latitude;longitude;number;ssrd;t2m;tp;u10;v10;valid_time,36.627,21.178,2,1,0.0,needs_interpretation_year_or_threshold_mismatch
+New_York,True,New York City,552,552,2019-06-01,2024-08-31,d2m;expver;latitude;longitude;number;ssrd;t2m;tp;u10;v10;valid_time,36.735,27.911,13,5,0.0,needs_interpretation_year_or_threshold_mismatch
+Tokyo,True,Tokyo,552,552,2019-06-01,2024-08-31,d2m;expver;latitude;longitude;number;ssrd;t2m;tp;u10;v10;valid_time,37.307,28.266,16,3,0.59,directionally_consistent_hot
+Dubai,False,,552,552,2019-06-01,2024-08-31,d2m;expver;latitude;longitude;number;ssrd;t2m;tp;u10;v10;valid_time,47.751,42.406,551,550,,not_applicable
+Marrakech,False,,552,552,2019-06-01,2024-08-31,d2m;expver;latitude;longitude;number;ssrd;t2m;tp;u10;v10;valid_time,46.571,34.318,317,252,,not_applicable
+Singapore,False,,583,583,2019-06-01,2024-08-31,d2m;expver;latitude;longitude;number;ssrd;t2m;tp;u10;v10;valid_time,32.051,28.996,0,0,,not_applicable
+Sydney,False,,359,359,2019-01-01,2022-12-31,d2m;expver;latitude;longitude;number;ssrd;t2m;tp;u10;v10;valid_time,44.548,25.668,23,8,,not_applicable
