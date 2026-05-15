@@ -1,0 +1,28 @@
+# Raw and private data
+data_raw/
+data/
+*.tif
+*.tiff
+*.zip
+*.7z
+*.parquet
+*.gpkg
+*.shp
+*.dbf
+*.shx
+*.geojson
+
+# Active submission/private material
+manuscript/
+ai_autoboost/revised_manuscript/
+rounds/
+logs/
+*.docx
+*.pdf
+
+# Credentials and local state
+.env
+*.key
+*.pem
+__pycache__/
+.venv/
