@@ -2,29 +2,28 @@
 
 ## Environment
 
-Use Python 3.11+ with geospatial packages listed in `ai_autoboost/code/requirements.txt`.
+Use Python 3.11+ with common geospatial/scientific packages such as `pandas`, `numpy`, `geopandas`, `rasterio`, `shapely`, `matplotlib`, `requests` and `scipy`.
 
 ## Non-destructive audit and derived-output regeneration
 
-From the private project root:
+From a full private/local project checkout with raw source data available:
 
 ```powershell
 python scripts\00_check_environment.py
 python scripts\16_run_all_pilots.py --only-missing
-python ai_autoboost\code\run_all_experiments.py
 ```
 
-Round 5 counterfactual outputs can be regenerated directly:
+Counterfactual outputs can be regenerated directly from the full local project using:
 
 ```powershell
-python ai_autoboost\code\round5_literature_counterfactual\round5_counterfactual_replicates.py --reps 5000
-python ai_autoboost\code\round5_literature_counterfactual\round5_summarize_counterfactual.py
+python scripts\13_counterfactual_population_weighted.py
 ```
+
+This public package does not redistribute raw third-party datasets. The `derived_tables/` and `figures/` folders provide non-sensitive derived outputs for verification and reuse.
 
 ## Expected key outputs
 
 - 621,781 processed facility records in the private processed table.
-- 300,000 Round 5 counterfactual replicate rows.
 - 60 city-facility counterfactual comparisons.
 - 27 Holm-corrected empirical departures from the population-weighted random-location baseline.
 

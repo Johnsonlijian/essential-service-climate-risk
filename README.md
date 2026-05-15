@@ -9,8 +9,7 @@ Important boundary: this repository intentionally excludes raw third-party data,
 - `REPRODUCIBLE_RUNBOOK.md`: commands and expected outputs.
 - `DATASETS_AND_LINKS.csv`: source registry for external datasets.
 - `CITATION.cff`: citation metadata draft.
-- `scripts/`: analysis and figure-generation scripts copied from the private project.
-- `ai_autoboost_code/`: reproducibility orchestration wrapper and dependency list.
+- `scripts/`: public-safe analysis and figure-generation scripts copied from the private project.
 - `derived_tables/`: non-sensitive derived manuscript tables.
 - `figures/`: generated manuscript figures.
 - `PUBLIC_RELEASE_BLOCKERS.md`: release-scope notes and exclusions.

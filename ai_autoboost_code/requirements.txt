@@ -1,9 +1,0 @@
-duckdb
-geopandas
-matplotlib
-numpy
-pandas
-pyarrow
-rasterio
-shapely
-xarray
