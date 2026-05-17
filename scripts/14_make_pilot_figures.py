@@ -7,11 +7,29 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from matplotlib.lines import Line2D
 
 
 FIG_DIR = Path("manuscript/figures")
 TABLE_DIR = Path("manuscript/tables")
 ROOT = Path(__file__).resolve().parents[1]
+ROUND5_DIR = Path("ai_autoboost/outputs/round5")
+
+
+plt.rcParams.update(
+    {
+        "font.size": 9,
+        "axes.titlesize": 10,
+        "axes.labelsize": 9,
+        "xtick.labelsize": 8,
+        "ytick.labelsize": 7,
+        "legend.fontsize": 8,
+        "figure.dpi": 150,
+        "savefig.dpi": 450,
+        "pdf.fonttype": 42,
+        "ps.fonttype": 42,
+    }
+)
 
 
 def load_indices() -> gpd.GeoDataFrame:
@@ -106,50 +124,107 @@ def figure3_grdi_inequality() -> None:
 
 
 def figure4_counterfactual() -> None:
-    table = pd.read_csv(TABLE_DIR / "table5_population_weighted_counterfactual.csv")
-    table["group"] = table["city"] + " " + table["facility_type"]
-    x = np.arange(len(table))
-    fig, ax = plt.subplots(figsize=(8.5, 4.3), constrained_layout=True)
-    ax.scatter(x, table["observed_compound_share"], label="Observed facilities", color="#222222", zorder=3)
-    ax.errorbar(
-        x,
-        table["counterfactual_compound_mean"],
-        yerr=[
-            table["counterfactual_compound_mean"] - table["counterfactual_compound_p05"],
-            table["counterfactual_compound_p95"] - table["counterfactual_compound_mean"],
-        ],
-        fmt="o",
-        color="#2f80b7",
-        ecolor="#9cc9e2",
-        capsize=4,
-        label="Population-weighted random baseline",
+    significance_path = ROUND5_DIR / "counterfactual_significance_table.csv"
+    if significance_path.exists():
+        table = pd.read_csv(significance_path)
+    else:
+        table = pd.read_csv(TABLE_DIR / "table5_population_weighted_counterfactual.csv")
+        table["empirical_p_two_sided_holm"] = np.nan
+        table["significance_direction"] = "not_tested"
+        table["counterfactual_compound_p025"] = table["counterfactual_compound_p05"]
+        table["counterfactual_compound_p975"] = table["counterfactual_compound_p95"]
+
+    table["group"] = table["city"] + " - " + table["facility_type"]
+    table = table.sort_values("observed_minus_counterfactual", ascending=True).reset_index(drop=True)
+    table["delta_pp"] = table["observed_minus_counterfactual"] * 100
+    table["ci_low_pp"] = (table["observed_compound_share"] - table["counterfactual_compound_p975"]) * 100
+    table["ci_high_pp"] = (table["observed_compound_share"] - table["counterfactual_compound_p025"]) * 100
+
+    def _color(direction: str) -> str:
+        if direction == "observed_above_random_after_holm":
+            return "#B2182B"
+        if direction == "observed_below_random_after_holm":
+            return "#2166AC"
+        return "#6A6A6A"
+
+    colors = table["significance_direction"].map(_color)
+    y = np.arange(len(table))
+    fig, ax = plt.subplots(figsize=(8.8, max(8.8, 0.22 * len(table))))
+    xerr = np.vstack(
+        [
+            table["delta_pp"] - table["ci_low_pp"],
+            table["ci_high_pp"] - table["delta_pp"],
+        ]
     )
-    ax.set_xticks(x)
-    ax.set_xticklabels(table["group"], rotation=25, ha="right")
-    ax.set_ylim(0, 1.05)
-    ax.set_ylabel("Compound exposure share")
-    ax.legend(frameon=False)
-    ax.set_title("Figure 4. Facility siting against population-weighted baseline")
+    ax.errorbar(
+        table["delta_pp"],
+        y,
+        xerr=xerr,
+        fmt="none",
+        ecolor="#BDBDBD",
+        elinewidth=0.75,
+        capsize=2.2,
+        zorder=1,
+    )
+    ax.scatter(table["delta_pp"], y, c=colors, s=20, edgecolor="white", linewidth=0.35, zorder=3)
+    ax.axvline(0, color="#222222", linewidth=0.8, linestyle="--")
+    ax.set_yticks(y)
+    ax.set_yticklabels(table["group"])
+    ax.set_xlabel("Observed minus population-weighted random baseline (percentage points)")
+    ax.set_ylabel("")
+    ax.set_title("Figure 4. Facility compound exposure relative to population-weighted random baselines")
+    ax.grid(axis="x", color="#E0E0E0", linewidth=0.6)
+    ax.spines[["top", "right"]].set_visible(False)
+    handles = [
+        Line2D([0], [0], marker="o", color="w", label="Above random after Holm", markerfacecolor="#B2182B", markersize=6),
+        Line2D([0], [0], marker="o", color="w", label="Below random after Holm", markerfacecolor="#2166AC", markersize=6),
+        Line2D([0], [0], marker="o", color="w", label="Not significant / not tested", markerfacecolor="#6A6A6A", markersize=6),
+    ]
+    ax.legend(handles=handles, frameon=False, loc="lower right")
+    fig.subplots_adjust(left=0.34, right=0.98, top=0.96, bottom=0.06)
     savefig(fig, "figure4_pilot_counterfactual.png")
 
 
 def figure5_priority(gdf: gpd.GeoDataFrame) -> None:
-    fig, ax = plt.subplots(figsize=(7.2, 5), constrained_layout=True)
-    markers = ["o", "^", "s", "D", "P", "X", "v", "<", ">", "*"]
-    for marker, city in zip(markers, gdf["city"].drop_duplicates(), strict=False):
-        sub = gdf[gdf["city"] == city].sample(min(4000, (gdf["city"] == city).sum()), random_state=8)
-        ax.scatter(
-            np.log1p(sub["service_pop_5p0km"]),
-            sub["hazard_score"],
-            s=7,
-            alpha=0.35,
-            marker=marker,
-            label=city,
-        )
-    ax.set_xlabel("log(1 + population within 5 km)")
-    ax.set_ylabel("Hazard score")
-    ax.legend(frameon=False)
-    ax.set_title("Figure 5. Adaptation priority space")
+    table = pd.read_csv(TABLE_DIR / "table1_pilot_facility_exposure.csv").copy()
+    table["group"] = table["city"] + " - " + table["facility_type"]
+    table["log_service_pop_5km"] = np.log10(table["median_service_pop_5km"].clip(lower=0) + 1)
+    sizes = np.clip(np.sqrt(table["n_facilities"]) * 2.0, 24, 320)
+
+    fig, ax = plt.subplots(figsize=(7.4, 5.3), constrained_layout=True)
+    scatter = ax.scatter(
+        table["log_service_pop_5km"],
+        table["compound_share"],
+        c=table["mean_escri"],
+        s=sizes,
+        cmap="cividis",
+        alpha=0.88,
+        edgecolor="#222222",
+        linewidth=0.35,
+    )
+    ax.set_xlabel("log10(1 + median population within 5 km)")
+    ax.set_ylabel("Compound exposure share")
+    ax.set_ylim(-0.04, 1.04)
+    ax.set_title("Figure 5. Adaptation priority space across city-facility groups")
+    ax.grid(color="#E0E0E0", linewidth=0.6)
+    ax.spines[["top", "right"]].set_visible(False)
+    cbar = fig.colorbar(scatter, ax=ax, pad=0.02)
+    cbar.set_label("Mean ESCRI")
+
+    for n in [500, 5_000, 25_000]:
+        ax.scatter([], [], s=np.clip(np.sqrt(n) * 2.0, 24, 320), c="#D9D9D9", edgecolor="#222222", linewidth=0.35, label=f"{n:,} facilities")
+    size_legend = ax.legend(
+        title="Group size",
+        frameon=False,
+        loc="center left",
+        bbox_to_anchor=(0.02, 0.47),
+        ncol=1,
+        borderaxespad=0,
+        handletextpad=0.8,
+        labelspacing=1.1,
+    )
+    size_legend.get_title().set_fontsize(8)
+    ax.add_artist(size_legend)
     savefig(fig, "figure5_pilot_priority_space.png")
 
     top = (
