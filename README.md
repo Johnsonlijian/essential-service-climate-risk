@@ -13,6 +13,7 @@ Important boundary: this repository intentionally excludes raw third-party data,
 - `derived_tables/`: non-sensitive derived manuscript tables.
 - `figures/`: generated manuscript figures.
 - `PUBLIC_RELEASE_BLOCKERS.md`: release-scope notes and exclusions.
+- `METHOD_TRANSPARENCY.md`: public-safe explanation of facility taxonomy, ESCRI construction, city-window counterfactual interpretation and multi-scale layer limits.
 
 ## Intended remote
 
