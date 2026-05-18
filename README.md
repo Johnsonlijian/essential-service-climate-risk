@@ -15,6 +15,18 @@ Important boundary: this repository intentionally excludes raw third-party data,
 - `PUBLIC_RELEASE_BLOCKERS.md`: release-scope notes and exclusions.
 - `METHOD_TRANSPARENCY.md`: public-safe explanation of facility taxonomy, ESCRI construction, city-window counterfactual interpretation and multi-scale layer limits.
 
+## Round 12 top-journal increments
+
+This public package now includes public-safe Round 12 outputs used to strengthen the manuscript for a Q1/top-journal route:
+
+- `scripts/round12_top_journal_increment.py`
+- `derived_tables/table20_escri_weight_ablation.csv`
+- `derived_tables/table21_service_node_typology.csv`
+- `derived_tables/table22_humid_heat_reclassification.csv`
+- `figures/figure6_escri_ablation_rank_stability.png`
+- `figures/figure7_service_node_typology.png`
+- `figures/figure8_humid_heat_reclassification.png`
+
 ## Intended remote
 
 `https://github.com/Johnsonlijian/essential-service-climate-risk`

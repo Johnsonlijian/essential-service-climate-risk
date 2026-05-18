@@ -1,0 +1,11 @@
+variant,spearman_rank_correlation_vs_equal_full,top3_overlap_vs_equal_full,max_absolute_rank_shift,mean_absolute_rank_shift,top3_cities,weight_heat,weight_flood,weight_water
+equal_weight_full,1.0,3,0,0.0,Cairo; Karachi; Delhi,,,
+entropy_weight_full,0.7423804226918799,1,15,4.733333333333333,Shanghai; Delhi; Bangkok,0.2596487872226213,0.6852407281179842,0.0551104846593945
+pca_hazard_full,0.9804226918798665,3,7,1.0666666666666667,Cairo; Karachi; Delhi,,,
+hazard_only,0.9777530589543939,2,7,1.0666666666666667,Cairo; Delhi; Shanghai,,,
+hazard_plus_service,0.9795328142380423,3,5,1.2,Cairo; Delhi; Karachi,,,
+hazard_plus_deprivation,0.9817575083426029,3,5,0.8666666666666667,Cairo; Delhi; Karachi,,,
+without_source_confidence,0.9853170189098998,3,4,1.0666666666666667,Cairo; Delhi; Karachi,,,
+without_heat,0.946162402669633,1,9,2.1333333333333333,Shanghai; Karachi; Dhaka,,,
+without_flood,0.9706340378197997,3,5,1.6666666666666667,Cairo; Karachi; Delhi,,,
+without_water_stress,0.6694104560622914,2,17,5.266666666666667,Cairo; Delhi; Shanghai,,,

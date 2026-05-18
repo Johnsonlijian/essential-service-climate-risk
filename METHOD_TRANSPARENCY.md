@@ -53,6 +53,18 @@ Practical magnitude is interpreted separately from statistical departure:
 
 The test is not a causal siting analysis.
 
+## Round 12 robustness additions
+
+The top-journal upgrade adds three public-safe derived outputs:
+
+| Output | Purpose |
+|---|---|
+| `table20_escri_weight_ablation.csv` | Tests whether city rankings are stable across equal-weight, entropy-weight, PCA-hazard, hazard-only, hazard-plus-context and leave-one-hazard-out ESCRI variants. |
+| `table21_service_node_typology.csv` | Converts city results into action-oriented service-node categories rather than a simple city leaderboard. |
+| `table22_humid_heat_reclassification.csv` | Quantifies where apparent-heat screening materially changes exposure relative to dry-bulb absolute-35C screening. |
+
+In the current derived outputs, 8 of 10 ESCRI variants retain Spearman rank correlation >= 0.8 relative to the equal-weight full ESCRI ranking, while entropy weighting and removal of water stress fall below that stability gate. Ten cities show large humid-heat uplift under the NASA POWER apparent-heat sensitivity screen. These are robustness and triage results, not claims of optimized universal weighting or local service-outage probability.
+
 ## Multi-scale layer caution
 
 | Layer | Spatial support | Facility interpretation | Limitation |
