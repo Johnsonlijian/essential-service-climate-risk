@@ -1,0 +1,31 @@
+area_id,city,osm_boundary_available,osm_display_name,osm_class,osm_type
+dhaka,Dhaka,True,"ঢাকা, ঢাকা মহানগর, ঢাকা জেলা, ঢাকা বিভাগ, 1215, বাংলাদেশ",place,city
+lagos,Lagos,True,"Lagos, Lagos Island, Lagos, 100242, Nigeria",place,city
+nairobi,Nairobi,True,"Nairobi, Zimmerman, Soko ya Mawe, Nairobi, Kenya",place,city
+mexico_city,Mexico City,True,"Ciudad de México, México",boundary,administrative
+jakarta,Jakarta,True,"Daerah Khusus Ibukota Jakarta, Jawa, Indonesia",boundary,administrative
+sao_paulo,Sao Paulo,True,"São Paulo, Região Sudeste, Brasil",boundary,administrative
+rotterdam,Rotterdam,True,"Rotterdam, Zuid-Holland, Nederland",boundary,administrative
+houston,Houston,True,"Houston, Harris County, Texas, United States",boundary,administrative
+shanghai,Shanghai,True,"上海市, 中国",boundary,administrative
+kolkata,Kolkata,True,"Kolkata, Kolkata Metropolitan Area, Kolkata, West Bengal, India",boundary,administrative
+bangkok,Bangkok,True,"กรุงเทพมหานคร, ประเทศไทย",boundary,administrative
+manila,Manila,True,"Manila, Capital District, Metro Manila, Philippines",boundary,administrative
+ho_chi_minh,Ho Chi Minh City,True,"Thành phố Hồ Chí Minh, Việt Nam",boundary,administrative
+delhi,Delhi,True,"New Delhi, Delhi, India",boundary,administrative
+karachi,Karachi,True,"کراچی ڈویژن, سندھ, پاکستان",boundary,administrative
+cairo,Cairo,True,"القاهرة, مصر",place,city
+istanbul,Istanbul,True,"İstanbul, Fatih, İstanbul, Marmara Bölgesi, 34122, Türkiye",place,city
+london,London,True,"Greater London, England, United Kingdom",boundary,administrative
+paris,Paris,True,"Paris, Île-de-France, France métropolitaine, France",boundary,administrative
+madrid,Madrid,True,"Madrid, Comunidad de Madrid, España",boundary,administrative
+rome,Rome,True,"Roma, Roma Capitale, Lazio, Italia",boundary,administrative
+new_york,New York City,True,"New York, United States",boundary,administrative
+los_angeles,Los Angeles,True,"Los Angeles, Los Angeles County, California, United States",boundary,administrative
+miami,Miami,True,"Miami, Miami-Dade County, Florida, United States",boundary,administrative
+buenos_aires,Buenos Aires,True,"Buenos Aires, Comuna 1, Ciudad Autónoma de Buenos Aires, Argentina",boundary,administrative
+lima,Lima,True,"Lima, Lima Metropolitana, Lima, 15001, Perú",place,city
+bogota,Bogota,True,"Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",boundary,administrative
+johannesburg,Johannesburg,True,"Johannesburg, City of Johannesburg Metropolitan Municipality, Gauteng, 2001, South Africa",place,city
+accra,Accra,True,"Accra, Korle-Klottey Municipal District, Greater Accra Region, Ghana",boundary,administrative
+tokyo,Tokyo,True,"東京都, 日本",boundary,administrative

@@ -27,6 +27,17 @@ This public package now includes public-safe Round 12 outputs used to strengthen
 - `figures/figure7_service_node_typology.png`
 - `figures/figure8_humid_heat_reclassification.png`
 
+## Round 13 boundary and inventory-validation outputs
+
+The package also includes public-safe Round 13 outputs addressing boundary and facility-inventory reviewer risks:
+
+- `scripts/round13_boundary_inventory_validation.py`
+- `derived_tables/table23_boundary_window_sensitivity.csv`
+- `derived_tables/table24_facility_inventory_quality.csv`
+- `derived_tables/table25_osm_boundary_fetch_status.csv`
+- `figures/figure9_boundary_window_sensitivity.png`
+- `figures/figure10_inventory_quality_diagnostics.png`
+
 ## Intended remote
 
 `https://github.com/Johnsonlijian/essential-service-climate-risk`

@@ -65,6 +65,12 @@ The top-journal upgrade adds three public-safe derived outputs:
 
 In the current derived outputs, 8 of 10 ESCRI variants retain Spearman rank correlation >= 0.8 relative to the equal-weight full ESCRI ranking, while entropy weighting and removal of water stress fall below that stability gate. Ten cities show large humid-heat uplift under the NASA POWER apparent-heat sensitivity screen. These are robustness and triage results, not claims of optimized universal weighting or local service-outage probability.
 
+## Round 13 boundary and inventory diagnostics
+
+The boundary validation increment tests the main bbox results against inner-window, facility-quantile and OSM/Nominatim polygon scopes. In the current derived outputs, all four non-main scopes pass both ESCRI-rank and compound-rank Spearman >= 0.8 stability gates. The OSM/Nominatim polygon check is useful but not a substitute for harmonized GHSL or official administrative-boundary validation.
+
+The facility-inventory increment reports source confidence, core-category share, OSM/Overture count ratios where available, and nearest-neighbor duplicate proxies. These diagnostics quantify source quality but do not turn Overture Places records into an official registry.
+
 ## Multi-scale layer caution
 
 | Layer | Spatial support | Facility interpretation | Limitation |
