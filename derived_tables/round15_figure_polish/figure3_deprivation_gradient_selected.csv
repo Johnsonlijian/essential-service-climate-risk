@@ -1,0 +1,13 @@
+city,facility_type,contrast,delta,delta_pp,n_compare_min,label
+Los Angeles,health,high - low,-0.14298328867697718,-14.298328867697718,9202,Los Angeles (health)
+Kolkata,health,high - middle,-0.14257246376811603,-14.257246376811603,1050,Kolkata (health)
+Kolkata,school,high - middle,-0.1162362619819417,-11.62362619819417,1395,Kolkata (school)
+Los Angeles,school,high - low,-0.11316437314939809,-11.316437314939808,2435,Los Angeles (school)
+London,school,high - low,-0.062530270002431,-6.2530270002431,1231,London (school)
+Miami,health,high - low,-0.0555326384730444,-5.553263847304439,1486,Miami (health)
+Ho Chi Minh City,school,high - middle,0.08327926783816239,8.327926783816238,126,Ho Chi Minh City (school)
+Tokyo,school,high - low,0.0941446088661726,9.41446088661726,950,Tokyo (school)
+Tokyo,health,high - low,0.1065012647956071,10.650126479560711,1703,Tokyo (health)
+Ho Chi Minh City,health,high - middle,0.1647190326186364,16.47190326186364,91,Ho Chi Minh City (health)
+Mexico City,health,high - low,0.2394272506580293,23.942725065802932,4097,Mexico City (health)
+Mexico City,school,high - low,0.24376445582727432,24.37644558272743,3215,Mexico City (school)

@@ -38,6 +38,18 @@ The package also includes public-safe Round 13 outputs addressing boundary and f
 - `figures/figure9_boundary_window_sensitivity.png`
 - `figures/figure10_inventory_quality_diagnostics.png`
 
+## Round 15 submission-figure polish
+
+The package includes the public-safe figure polish script used for the final submission-facing figures:
+
+- `scripts/round15_submission_figure_polish.py`
+- `figures/figure3_pilot_grdi_inequality.png`
+- `figures/figure6_escri_ablation_rank_stability.png`
+- `figures/figure9_boundary_window_sensitivity.png`
+- `figures/figure10_inventory_quality_diagnostics.png`
+
+Round 15 rebuilds Figure 3 as a compact two-panel GRDI dashboard and repositions labels/legends in Figures 6, 9 and 10 to improve main-text readability.
+
 ## Intended remote
 
 `https://github.com/Johnsonlijian/essential-service-climate-risk`

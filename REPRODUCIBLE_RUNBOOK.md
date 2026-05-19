@@ -21,6 +21,16 @@ python scripts\13_counterfactual_population_weighted.py
 
 This public package does not redistribute raw third-party datasets. The `derived_tables/` and `figures/` folders provide non-sensitive derived outputs for verification and reuse.
 
+## Rebuild submission-polished figures
+
+The final submission-facing versions of Figures 3, 6, 9 and 10 can be regenerated from public-safe derived tables:
+
+```powershell
+python scripts\round15_submission_figure_polish.py
+```
+
+This step writes the polished figures to `figures/` and writes compact supporting summaries under `derived_tables/round15_figure_polish/`.
+
 ## Expected key outputs
 
 - 621,781 processed facility records in the private processed table.

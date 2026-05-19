@@ -1,0 +1,20 @@
+{
+  "figure3": {
+    "figure": "figures\\figure3_pilot_grdi_inequality.png",
+    "weighted_rows": 6,
+    "gradient_candidates": 48,
+    "selected_gradients": 12
+  },
+  "figure6": {
+    "figure": "figures\\figure6_escri_ablation_rank_stability.png",
+    "variants": 10
+  },
+  "figure9": {
+    "figure": "figures\\figure9_boundary_window_sensitivity.png",
+    "scopes": 4
+  },
+  "figure10": {
+    "figure": "figures\\figure10_inventory_quality_diagnostics.png",
+    "cities": 30
+  }
+}
